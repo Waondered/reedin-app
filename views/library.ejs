@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/lib_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Reedin</title>
+</head>
+<body>
+     <h1 id="header">Biblioteca Geral</h1>
+     <div id="biblioteca"><button id="open-modal">Adicionar a biblioteca</button></div>
+    <div id="fade" class="hide"></div>
+    <div id="modal" class="hide">
+        <div class="modal-header">Selecione um arquivo e preencha os campos</div>
+        <div class="modal-body">
+        <form enctype="multipart/form-data">
+            <div class="dragndrop">
+                 <input type="file" class="file-input" name= "file" hidden> 
+                 <i class="fas fa-cloud-upload-alt" id="icon"></i>
+                 <p>Selecionar arquivo</p>
+            </div>
+
+             <div class="campo">
+                 <label for="title">Título</label>
+                <input type="text" class="form-control" id="title" name= "title" required>
+            </div>
+
+            <div class="campo">
+                <label for="author">Autor</label>
+                <input type="text" class="form-control" id="author" name= "author" required>
+            </div>
+
+            <div class="campo">
+                <label for="publisher">Editora</label>
+                <input type="text" class="form-control" id="publisher" name= "publisher" required>
+            </div>
+
+            <div class="campo">
+                <label for="pages">Número de páginas</label>
+                <input type="text" class="form-control" id="pages" name= "pages" required>
+            </div>
+            <button type="submit" id="enviar">Enviar</button>
+            <button id="close-modal">Cancelar</button>
+        </form>
+        </div>
+    </div>
+    <script src="/js/library.app.js" type="module"></script>
+    
+</body>
+</html>

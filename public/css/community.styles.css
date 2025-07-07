@@ -1,0 +1,217 @@
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f2f5; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+main {
+    background-color: #ffffff;
+    border-radius: 12px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    min-height: 80vh; 
+}
+
+
+.form-join {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #f7f7f7;
+}
+
+.form-join input[type="text"] {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.form-join button {
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.form-join button:hover {
+    background-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+.form-join button:active {
+    transform: translateY(0);
+}
+
+
+.chat-display {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    flex-grow: 1;
+    overflow-y: auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+
+
+.post {
+    padding: 10px 15px;
+    border-radius: 12px; 
+    max-width: 70%; 
+    word-wrap: break-word; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    position: relative;
+   
+}
+
+
+.post--mine {
+    background-color: #e2e2e2; 
+    align-self: flex-end; 
+    margin-left: auto; 
+    border-bottom-right-radius: 4px; 
+}
+
+.post--other {
+    background-color: #dcf8c6; 
+    align-self: flex-start; 
+    margin-right: auto; 
+    border-bottom-left-radius: 4px; 
+}
+
+
+.post--admin {
+    background-color: #f0f0f0; 
+    align-self: center; 
+    font-style: italic;
+    color: #555;
+    text-align: center;
+}
+
+
+.post__header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.75rem;
+    margin-bottom: 5px;
+
+    color: #666;
+}
+
+
+.post__text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #333;
+}
+
+
+
+.post__header--usuario .post__header--nome {
+    color: #007bff; 
+    font-weight: bold;
+}
+
+.post__header--resposta .post__header--nome {
+    color: #000000; 
+    font-weight: bold;
+}
+
+.post__header--time {
+    color: #999;
+}
+
+
+
+.form-msg {
+    display: flex;
+    padding: 15px;
+    border-top: 1px solid #e0e0e0;
+    background-color: #f7f7f7;
+}
+
+.form-msg input[type="text"] {
+    flex-grow: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.form-msg button.send-message {
+    padding: 10px 20px;
+    background-color: #28a745; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.form-msg button.send-message:hover {
+    background-color: #218838;
+    transform: translateY(-1px);
+}
+
+.form-msg button.send-message:active {
+    transform: translateY(0);
+}
+
+
+.user-list, .room-list, .activity {
+    padding: 5px 15px;
+    font-size: 0.85rem;
+    color: #666;
+    text-align: center;
+    background-color: #eef2f6;
+    border-top: 1px solid #e0e0e0;
+}
+
+.activity {
+    font-style: italic;
+    color: #007bff;
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+    .form-join, .form-msg {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .form-join input, .form-msg input {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .form-join button, .form-msg button {
+        width: 100%;
+    }
+
+    .post {
+        max-width: 90%; /* Aumenta a largura da bolha em telas menores */
+    }
+}

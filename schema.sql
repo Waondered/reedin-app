@@ -1,0 +1,18 @@
+CREATE DATABASE reedin;
+USE reedin;
+
+CREATE TABLE formulario (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(255),
+  author VARCHAR(255),
+  publisher VARCHAR(255),
+  pages INT
+);
+
+CREATE TABLE arquivo (
+  id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  form_id INT UNSIGNED,
+  filename VARCHAR(255),
+  file_data LONGBLOB,
+  FOREIGN KEY (form_id) REFERENCES formulario(id) ON DELETE CASCADE
+);

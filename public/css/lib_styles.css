@@ -1,0 +1,166 @@
+*{
+ font-family:  Helvetica;
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+}
+
+#biblioteca{
+    padding: 1 rem;
+    border:  2px solid black;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    padding-right: 0.5;
+}
+
+li { 
+    
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+    border-top: 1px solid #ccc;
+}
+
+#download {
+    background-color: #007bff;
+    color: #fff;
+    border-radius: .5rem;
+    text-decoration: none;
+    padding: .15rem;
+}
+#open-modal{
+    margin: 1rem;
+}
+
+
+button {
+    padding: .6rem 1.2rem;
+    background-color: #888;
+    color: #fff;
+    border: none;
+    border-radius: .50rem;
+    cursor: pointer;
+    opacity: .9;
+    font-size: 1rem;
+    transition: 0.5s;
+
+}
+
+#open-modal{
+    background-color: #007bff;
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+#fade, #modal {
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+}
+
+#modal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background-color: #fff;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    max-width: 90%;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+.modal-body input{
+    margin-bottom: 1rem;
+}
+
+#enviar{
+    background-color: #2AA4FA;
+    color: #fff;
+}
+
+.delete{
+    background-color: red;
+    color: #fff;
+    padding: 0.1rem;
+}
+
+#close-modal{
+    background-color: red;
+    color: white;
+}
+
+#header{
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    background-color: #2AA4FA;
+}
+
+.dragndrop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px dashed black;
+    height: 150px;
+    color: #2AA4FA;
+    border-color: #2AA4FA;
+}
+
+.dragndrop:hover{
+    opacity: 0.7;
+}
+dragndrop i{
+    font-size: 80px;
+}
+
+dragndrop p{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+#modal.hide,
+#fade.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+#modal.hide{
+    top: 0;
+}
