@@ -42,7 +42,7 @@ npm clone https://github.com/Waondered/reedin-app
 npm install express multer cors dotenv ejs mysql2 socket.io
 
 # Para executar a aplicação
-npm run server
+npm run start
 ```
 ## Como utilizar
  Abra uma janela em seu navegador e insira o endereço "localhost:3000".
