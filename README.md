@@ -45,7 +45,7 @@ npm install express multer cors dotenv ejs mysql2 socket.io
 npm run server
 ```
 ## Como utilizar
- Abra uma janela e insira o endereço "localhost:3000".
+ Abra uma janela em seu navegador e insira o endereço "localhost:3000".
 ### :blue_book: Biblioteca
  Para utilizar a bilioteca, clique em "Adicionar à biblioteca", selecione o arquivo e preencha os campos.
 
