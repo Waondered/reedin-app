@@ -34,6 +34,8 @@
 ## Instalação e execução
  Para instalar e executar esta aplicação, você precisará do Git, Node.js e algum programa/ferramenta que oferece suporte para MySQL (ex: MySQL Workbench ou XAMPP).
 
+- Crie um banco de dados utilizando o arquivo ``` schema.sql ``` como referência.
+
 ```console
 # Para clonar o repositório
 npm clone https://github.com/Waondered/reedin-app
