@@ -22,11 +22,11 @@
 
 ## :gear: Ajustes e melhorias
 - [ ] Desenvolvimento de UI em ReactJS
+- [ ] Desenvolvimento do chat entre usuários
 - [ ] Implementação de registro e autenticação de usuários
-- [ ] Desenvolvimento de sistema de criação de comunidades entre usuários
+- [ ] Implementação de sistema de criação de comunidades entre usuários
 - [ ] Implementação de sistema de adicionar e seguir usuários
-- [ ] Implementação de chat privado entre usuários
-- [ ] Implementação de ferramenta de criação de bibliotecas personalizadas
+- [ ] Implementação de ferramenta de criação de bibliotecas personalizadas públicas e privadas
 - [ ] Implementação de verificação e autenticação de arquivos
 - [ ] Implementação de sistema de preview, picture-in-picture, compartilhamento através de links e avaliação, como as estrelas da Amazon e/ou curtidas do Instagram, de arquivos e bibliotecas
 - [ ] Versão mobile
